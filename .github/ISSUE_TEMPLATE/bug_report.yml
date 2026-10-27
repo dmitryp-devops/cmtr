@@ -1,9 +1,6 @@
 name: Feature request 22
 description: Suggest an improvement or new capability for the project
 title: "BUG: "
-labels: 
-   - bug
-type: bug
 labels:
   - enhancement
 body:
