@@ -1,83 +1,47 @@
-name: Bug Report 2
-description: Create a report to help us improve.
-title: "BUG: "
-labels: 
-   - bug
-type: bug
+name: Feature request 22
+description: Suggest an improvement or new capability for the project
+title: "Test"
+labels:
+  - enhancement
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for suggesting an improvement.
 
   - type: checkboxes
+    id: checklist
     attributes:
-      label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the bug you encountered.
+      label: Checklist
+      description: Please confirm before submitting.
       options:
-      - label: I have searched the existing issues
-        required: true
+        - label: I searched existing issues and did not find a similar request
+          required: true
 
   - type: textarea
-    id: what-happened
+    id: problem
     attributes:
-      label: Describe the bug
-      description: A clear and concise description of what the bug is.
-    validations:
-      required: true
-
-  - type: textarea
-    attributes:
-      label: Current Behavior
-      description: A concise description of what you're experiencing.
+      label: Problem to solve
+      description: What problem or limitation are you trying to address?
     validations:
       required: true
 
   - type: textarea
+    id: proposal
     attributes:
-      label: Expected Behavior
-      description: A concise description of what you expected to happen.
+      label: Proposed solution
+      description: Describe the feature or improvement you would like to see.
     validations:
       required: true
 
   - type: textarea
+    id: alternatives
     attributes:
-      label: Steps To Reproduce
-      description: Steps to reproduce the behavior.
-      placeholder: |
-        1. In this environment...
-        1. With this config...
-        1. Run '...'
-        1. See error...
-    validations:
-      required: true
-
-  - type: upload
-    id: screenshots
-    attributes:
-      label: Upload screenshots
-      description: If applicable, add screenshots to help explain your problem.
-    validations:
-      required: false
+      label: Alternatives considered
+      description: What alternatives or workarounds have you considered?
 
   - type: textarea
-    id: tools
+    id: context
     attributes:
-      label: Version and Tools
-      description: Please provide the version of BrainTF you are using, as well as any relevant tools or libraries.
-      placeholder: |
-        - BrainTF version: x.y.z
-        - Terraform version: x.y.z
-        - Docker version: x.y.z
-        - VCS: GitHub, GitLab, etc.
-    validations:
-      required: true
-      
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: true
+      label: Additional context
+      description: Add any screenshots, references, examples, or other context.
