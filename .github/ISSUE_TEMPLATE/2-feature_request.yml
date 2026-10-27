@@ -9,6 +9,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this feature request!
+
   - type: checkboxes
     attributes:
       label: Is there an existing issue for this?
@@ -16,6 +17,7 @@ body:
       options:
       - label: I have searched the existing issues
         required: true
+
   - type: textarea
     id: what-happened
     attributes:
@@ -23,12 +25,14 @@ body:
       description: Is your feature request related to a problem? Please describe.
     validations:
       required: true
+
   - type: textarea
     attributes:
       label: Expected Behavior
       description: A clear and concise description of what you want to happen.
     validations:
       required: true
+
   - type: upload
     id: screenshots
     attributes:
@@ -36,6 +40,7 @@ body:
       description: If applicable, add screenshots to help explain your problem.
     validations:
       required: false
+      
   - type: input
     id: contact
     attributes:
